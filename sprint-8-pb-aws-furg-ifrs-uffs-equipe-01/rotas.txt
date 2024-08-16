@@ -1,0 +1,5 @@
+ GET - https://p8e0jd1450.execute-api.us-east-1.amazonaws.com/
+  GET - https://p8e0jd1450.execute-api.us-east-1.amazonaws.com/v1
+  POST - https://p8e0jd1450.execute-api.us-east-1.amazonaws.com/v1/vision
+  GET - https://p8e0jd1450.execute-api.us-east-1.amazonaws.com/v2
+  POST - https://p8e0jd1450.execute-api.us-east-1.amazonaws.com/v2/vision

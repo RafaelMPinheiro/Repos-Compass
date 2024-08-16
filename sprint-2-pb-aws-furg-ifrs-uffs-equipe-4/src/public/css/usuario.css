@@ -1,0 +1,34 @@
+.container {
+  padding: 2vh 0;
+}
+
+h1,
+h2,
+p {
+  color: #c9c9c9;
+}
+
+div.coluna-resultado,
+h2.coluna-resultado {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+  padding: 2vh 1vw;
+  margin-bottom: 2vh;
+  border-radius: 12px;
+}
+
+h2.coluna-resultado {
+  border: 1px solid #c9c9c9;
+}
+
+div.coluna-resultado {
+  align-items: center;
+}
+
+.coluna-resultado img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  border: 2px solid #c9c9c9;
+}

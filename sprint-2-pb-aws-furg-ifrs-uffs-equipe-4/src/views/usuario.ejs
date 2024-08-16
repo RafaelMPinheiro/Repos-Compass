@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/img/faviconV2.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/usuario.css" />
+    <title>Resultado da Busca</title>
+  </head>
+  <body>
+    <nav class="custom-breadcrumb d-flex flex-column justify-content-center align-items-center" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="/">Início</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Usuário
+        </li>
+      </ol>
+    </nav>
+      <ul class="resultados">
+        <div class="coluna-resultado">
+          <img src= <%= usuario.avatar %></img>
+        </div>
+        <% if(usuario.nome != null){ %>
+          <h2 class="coluna-resultado"><strong>Nome:</strong> <%= usuario.nome %></h2> <!--Nome do usuário -->
+        <% } else { %>
+          <h2 class="coluna-resultado"><strong>Nome:</strong> <%= usuario.login %></h2> <!--Login do Usuário -->
+        <% } %>
+        <h2 class="coluna-resultado"><strong>Github:</strong> <a target ="_blank" href= <%= usuario.link %> > <%= usuario.link %> </a></h2>
+        <!-- URL do Github do usuário-->    
+        <h2 class="coluna-resultado"><strong>Criação da conta:</strong> <%= usuario.dataCriacao %></h2> 
+        <!-- Data de criação do Perfil-->
+        <h2 class="coluna-resultado"><strong>Seguidores:</strong> <%= usuario.seguidores %></h2>
+        <!-- Número de seguidores-->
+      </ul>
+    </div>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

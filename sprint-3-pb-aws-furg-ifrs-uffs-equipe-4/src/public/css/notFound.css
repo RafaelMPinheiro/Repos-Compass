@@ -1,0 +1,21 @@
+.container {
+  display:grid;
+  place-items: center;
+  height: 80vh;
+  width: 100vw;
+}
+
+.container-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+p {
+  color: #fff;
+}
+
+strong {
+  text-transform: uppercase;
+}

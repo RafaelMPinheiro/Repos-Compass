@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/img/faviconV2.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/repos.css" />
+    <title>Resultados da Busca</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="titulo text-center">Resultados da Busca</h1>
+      <nav class="custom-breadcrumb d-flex flex-column justify-content-center align-items-center" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/">Início</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Repositórios
+          </li>
+        </ol>
+      </nav>
+      <ul class="resultados">
+        <% repos.forEach(function(repo) { %>
+        <li class="coluna-resultado">
+          <h2><%= repo.nome %></h2>
+          <p><strong>Dono:</strong> <%= repo.dono %></p>
+          <p><strong>Descrição:</strong> <%= repo.descricao %></p>
+          <p><strong>Estrelas:</strong> <%= repo.estrelas %></p>
+          <p><strong>Url: </strong> <a href= <%= repo.url %> ><%= repo.url %></a></p>
+        </li>
+        <% }); %>
+      </ul>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<nav
+  class="custom-breadcrumb d-flex flex-column justify-content-center align-items-center"
+  aria-label="breadcrumb"
+>
+<ol class="breadcrumb">
+    <% for (let i = 0; i < breadcrumb.length; i++) { %>
+      <% if (i === breadcrumb.length - 1) { %>
+        <li class="breadcrumb-item active" aria-current="page"><%= breadcrumb[i].label %></li>
+      <% } else { %>
+        <li class="breadcrumb-item"><a href="<%= breadcrumb[i].url %>"><%= breadcrumb[i].label %></a></li>
+      <% } %>
+    <% } %>
+  </ol>
+</nav>

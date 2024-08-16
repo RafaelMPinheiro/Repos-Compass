@@ -1,0 +1,19 @@
+.container {
+  padding: 2vh 0;
+}
+
+h1,
+h2,
+p {
+  color: #c9c9c9;
+}
+
+.coluna-resultado {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
+  padding: 2vh 1vw;
+  border: 1px solid #c9c9c9;
+  margin-bottom: 2vh;
+  border-radius: 12px;
+}

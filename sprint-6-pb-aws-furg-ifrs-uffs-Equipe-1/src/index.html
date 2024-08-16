@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UOLvoice - NLP Service</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" />
+  </head>
+  <body>
+    <div class="routesDefault">
+      <h1>Verifique se a rota está OK!</h1>
+
+      <form id="formDefault" class="container" action="#">
+        <input type="submit" value="Enviar" />
+
+        <div class="radioDefaultButtons">
+          <input
+            type="radio"
+            id="radioDefault1"
+            name="radioDefault"
+            value=""
+            checked
+          />
+          <label for="radioDefault1">Rota /</label>
+
+          <input
+            type="radio"
+            id="radioDefault2"
+            name="radioDefault"
+            value="v1"
+          />
+          <label for="radioDefault2">Rota /v1</label>
+
+          <input
+            type="radio"
+            id="radioDefault3"
+            name="radioDefault"
+            value="v2"
+          />
+          <label for="radioDefault3">Rota /v2</label>
+        </div>
+      </form>
+      <h4 id="resultDefault"></h4>
+    </div>
+
+    <div class="routesTTS">
+      <h1>Converta sua frase em áudio!</h1>
+
+      <form id="formTTS" class="container" action="#">
+        <div class="fromContent">
+          <label for="phrase">Frase:</label>
+          <input type="text" id="phrase" name="phrase" required />
+          <input type="submit" value="Enviar" />
+        </div>
+
+        <div class="radioButtons">
+          <input type="radio" id="radio1" name="radioTTS" value="v1" checked />
+          <label for="radio1">Rota v1/tts</label>
+
+          <input type="radio" id="radio2" name="radioTTS" value="v2" />
+          <label for="radio2">Rota v2/tts</label>
+
+          <input type="radio" id="radio3" name="radioTTS" value="v3" />
+          <label for="radio3">Rota v3/tts</label>
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <p id="received_phrase"></p>
+      <span id="linkResponse">Link: <a id="url_to_audio"></a> </span>
+      <p id="created_audio"></p>
+      <p id="id_audio"></p>
+      <audio id="audio" controls></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

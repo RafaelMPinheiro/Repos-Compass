@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: #000;
+}
+
+#linkResponse {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formDefault input[type="submit"] {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#formDefault input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.routesDefault #resultDefault {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.fromContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.fromContent label {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.fromContent input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.fromContent input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.fromContent input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#audio {
+  display: none;
+  align-self: center;
+  width: 100%;
+}
