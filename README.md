@@ -2,47 +2,32 @@
 
 ## ✨ Sobre o Projeto
 
-**Repos-Compass** é um repositório abrangente que consolida as atividades práticas e os projetos desenvolvidos durante o curso de **Práticas de AWS (PB-AWS)**, uma iniciativa colaborativa entre as instituições federais FURG, IFRS e UFFS. Este projeto visa documentar e compartilhar o aprendizado adquirido em diversas áreas da computação em nuvem, com foco nos serviços da Amazon Web Services (AWS).
+**Repos-Compass** reúne as entregas que fiz no Programa de Bolsas da Compass UOL, no curso de **Práticas de AWS (PB-AWS)**, uma parceria entre FURG, IFRS e UFFS. Cada pasta `sprint-X...` guarda o código e o README de uma sprint. A Sprint 1 foi individual; da 2 à 9-10 o trabalho foi em equipe, e a equipe aparece no nome da pasta.
 
-Cada sprint representa um módulo de aprendizado focado em um conjunto específico de serviços e conceitos da AWS, desde a hospedagem de sites estáticos até a orquestração de contêineres e a implementação de arquiteturas serverless. Este repositório serve como um portfólio prático e um recurso valioso para estudantes, desenvolvedores e entusiastas de computação em nuvem que desejam explorar implementações reais de soluções AWS.
+Os READMEs de cada sprint são a fonte das informações abaixo. Para detalhes, rotas e instruções de execução, abra o `README.md` da pasta.
 
 ## 🛠️ Tecnologias Utilizadas
 
-Este repositório abrange uma vasta gama de serviços e tecnologias AWS, incluindo, mas não se limitando a:
+Pelo que os READMEs das sprints descrevem:
 
-*   **Amazon S3:** Armazenamento de objetos escalável e seguro.
-*   **Amazon CloudFront:** Rede de entrega de conteúdo (CDN) para alta performance.
-*   **Amazon VPC:** Redes virtuais isoladas na nuvem.
-*   **Amazon RDS (MySQL):** Banco de dados relacional gerenciado.
-*   **AWS Lambda:** Funções serverless para execução de código sem provisionamento de servidores.
-*   **Amazon SNS:** Serviço de notificação simples.
-*   **AWS CodeCommit, CodeBuild, CodePipeline:** Ferramentas para integração contínua e entrega contínua (CI/CD).
-*   **Amazon ECS & Fargate:** Orquestração de contêineres e computação serverless para contêineres.
-*   **Amazon CloudWatch:** Monitoramento e observabilidade.
-*   **Amazon API Gateway:** Criação, publicação, manutenção, monitoramento e segurança de APIs.
-
-Além das tecnologias AWS, os projetos utilizam linguagens e frameworks como:
-
-*   **Jupyter Notebook**
-*   **JavaScript**
-*   **Python**
-*   **EJS**
-*   **CSS**
-*   **HTML**
+*   **Linguagens e front-end:** JavaScript, Node.js (Express), Python, HTML, CSS e Bootstrap.
+*   **Contêineres:** Docker e Docker Compose, com a imagem publicada no Docker Hub e executada numa instância EC2.
+*   **Hospedagem e deploy:** AWS Elastic Beanstalk, AWS Amplify, Serverless Framework e Terraform.
+*   **Serverless e dados:** AWS Lambda, Amazon S3 e Amazon DynamoDB.
+*   **IA e linguagem:** Amazon SageMaker (modelo de reservas), Amazon Polly, Amazon Lex, Amazon Rekognition e Amazon Transcribe.
+*   **Integrações:** Slack, WhatsApp via Twilio e a API do GitHub.
 
 ## 📂 Estrutura de Sprints
 
-Cada pasta `sprint-X...` contém os exercícios e projetos realizados em cada sprint do curso. Para detalhes específicos de cada sprint, acesse o `README.md` dentro da respectiva pasta. Abaixo, uma breve descrição de cada entrega:
-
-*   **sprint-1-pb-aws-furg-ifrs-uffs-rafael-pinheiro:** Implementação de um site estático hospedado em Amazon S3 com distribuição via CloudFront.
-*   **sprint-2-pb-aws-furg-ifrs-uffs-equipe-4:** Configuração de rede: criação de VPC, sub-redes públicas e privadas, e gateways de internet.
-*   **sprint-3-pb-aws-furg-ifrs-uffs-equipe-4:** Provisionamento de banco de dados relacional (RDS MySQL) e ajustes de segurança com grupos de segurança.
-*   **sprint-4-pb-aws-furg-ifrs-uffs-equipe-4:** Desenvolvimento de funções serverless em AWS Lambda e integração com S3 e SNS.
-*   **sprint-5-pb-aws-furg-ifrs-uffs-equipe-2:** Pipeline de CI/CD utilizando AWS CodeCommit, CodeBuild e CodePipeline para deploy automático.
-*   **sprint-6-pb-aws-furg-ifrs-uffs-Equipe-1:** Orquestração de containers com Amazon ECS e Fargate, deploy de aplicação Dockerizada.
-*   **sprint-7-pb-aws-furg-ifrs-uffs-equipe-2:** Monitoramento e alertas: configuração de CloudWatch para logs centralizados e alarms.
-*   **sprint-8-pb-aws-furg-ifrs-uffs-equipe-01:** API Gateway + Lambda: criação de endpoints REST e integração com backend serverless.
-*   **sprint-9-10-pb-aws-furg-ifrs-uffs-equipe-2:** Integração final dos componentes, revisão de segurança e otimizações de custo.
+*   **sprint-1-pb-aws-furg-ifrs-uffs-rafael-pinheiro:** sistema de verificação de PIN em JavaScript. O usuário informa um número e recebe a dica de que o próximo valor deve ser maior, muito maior, menor ou muito menor.
+*   **sprint-2-pb-aws-furg-ifrs-uffs-equipe-4:** aplicação Node.js que consome a API do GitHub e consulta repositórios e usuários.
+*   **sprint-3-pb-aws-furg-ifrs-uffs-equipe-4:** a aplicação da Sprint 2 em contêiner Docker, com docker-compose, e publicada numa instância EC2.
+*   **sprint-4-pb-aws-furg-ifrs-uffs-equipe-4:** API em Node.js e Express que consulta duas APIs públicas (piadas e atividades), com deploy no AWS Elastic Beanstalk.
+*   **sprint-5-pb-aws-furg-ifrs-uffs-equipe-2:** modelo de previsão de reservas treinado no SageMaker, com uma API que o consulta (rota `POST /api/v1/predict`), publicada no Elastic Beanstalk.
+*   **sprint-6-pb-aws-furg-ifrs-uffs-Equipe-1:** UOLvoice, que converte texto em áudio MP3 com o Amazon Polly, guarda o arquivo no S3 e registra os dados no DynamoDB. O deploy usa o Serverless Framework, e a página fica no Amplify.
+*   **sprint-7-pb-aws-furg-ifrs-uffs-equipe-2:** UOL Bank, um chatbot bancário feito com o Amazon Lex e acessado pelo Slack, com intenções de extrato, transferência, empréstimo e cancelamento de cartão.
+*   **sprint-8-pb-aws-furg-ifrs-uffs-equipe-01:** Identifier, uma API que analisa imagens guardadas no S3 com o Amazon Rekognition (rota `POST /v1/vision`), com infraestrutura em Terraform.
+*   **sprint-9-10-pb-aws-furg-ifrs-uffs-equipe-2:** EquiTalk Bot, um chatbot de acessibilidade com Amazon Lex, Polly, Transcribe e Rekognition, integrado ao WhatsApp via Twilio e publicado com Serverless.
 
 ## 🚀 Como Usar
 
