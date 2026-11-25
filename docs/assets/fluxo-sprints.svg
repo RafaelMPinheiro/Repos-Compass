@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 860" width="720" height="860" role="img" aria-labelledby="t d">
+  <title id="t">Fluxo de evolução das sprints do Repos-Compass</title>
+  <desc id="d">Diagrama (ilustração, não é captura de tela) em quatro etapas, de cima para baixo. Etapa 1, sprints 1 e 2: fundamentos com JavaScript, Node.js e a API do GitHub. Etapa 2, sprints 3 a 5: contêineres e deploy com Docker, EC2, Elastic Beanstalk e um modelo no SageMaker. Etapa 3, sprint 6: serverless e dados com Polly, S3, DynamoDB e Amplify. Etapa 4, sprints 7 a 10: IA e conversação com Lex, Slack, Rekognition, Terraform, Transcribe e WhatsApp via Twilio.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#12395C"/>
+    </marker>
+  </defs>
+  <rect width="720" height="860" fill="#FFFFFF"/>
+  <g font-family="'Helvetica Neue',Arial,sans-serif">
+    <g>
+      <rect x="20" y="20" width="680" height="170" rx="16" fill="#EEF4FA" stroke="#12395C" stroke-width="3"/>
+      <text x="48" y="64" font-size="26" font-weight="700" fill="#0B1F33">1 · Fundamentos</text>
+      <text x="48" y="98" font-size="22" font-weight="600" fill="#9A4F00">Sprints 1 e 2</text>
+      <text x="48" y="132" font-size="22" fill="#1B2A3A">JavaScript e Node.js: verificação de PIN</text>
+      <text x="48" y="162" font-size="22" fill="#1B2A3A">e consulta à API do GitHub</text>
+    </g>
+    <path d="M360 192V238" stroke="#12395C" stroke-width="4" marker-end="url(#a)"/>
+    <g>
+      <rect x="20" y="240" width="680" height="200" rx="16" fill="#EEF4FA" stroke="#12395C" stroke-width="3"/>
+      <text x="48" y="284" font-size="26" font-weight="700" fill="#0B1F33">2 · Contêineres e deploy</text>
+      <text x="48" y="318" font-size="22" font-weight="600" fill="#9A4F00">Sprints 3 a 5</text>
+      <text x="48" y="352" font-size="22" fill="#1B2A3A">Docker em uma instância EC2 (sprint 3)</text>
+      <text x="48" y="382" font-size="22" fill="#1B2A3A">Elastic Beanstalk (sprints 4 e 5)</text>
+      <text x="48" y="412" font-size="22" fill="#1B2A3A">Modelo de reservas no SageMaker (sprint 5)</text>
+    </g>
+    <path d="M360 442V488" stroke="#12395C" stroke-width="4" marker-end="url(#a)"/>
+    <g>
+      <rect x="20" y="490" width="680" height="170" rx="16" fill="#EEF4FA" stroke="#12395C" stroke-width="3"/>
+      <text x="48" y="534" font-size="26" font-weight="700" fill="#0B1F33">3 · Serverless e dados</text>
+      <text x="48" y="568" font-size="22" font-weight="600" fill="#9A4F00">Sprint 6</text>
+      <text x="48" y="602" font-size="22" fill="#1B2A3A">Texto → Polly → MP3 no S3 → registro no DynamoDB</text>
+      <text x="48" y="632" font-size="22" fill="#1B2A3A">Serverless Framework e página no Amplify</text>
+    </g>
+    <path d="M360 662V708" stroke="#12395C" stroke-width="4" marker-end="url(#a)"/>
+    <g>
+      <rect x="20" y="710" width="680" height="130" rx="16" fill="#0B1F33"/>
+      <text x="48" y="750" font-size="26" font-weight="700" fill="#FFFFFF">4 · IA e conversação</text>
+      <text x="48" y="782" font-size="22" font-weight="600" fill="#FFB74D">Sprints 7 a 10</text>
+      <text x="48" y="812" font-size="21" fill="#FFFFFF">Lex + Slack · Rekognition + Terraform · Lex, Polly,</text>
+      <text x="48" y="836" font-size="21" fill="#FFFFFF">Transcribe e Rekognition no WhatsApp via Twilio</text>
+    </g>
+  </g>
+</svg>

@@ -1,10 +1,22 @@
-# 🚀 Repos-Compass: Jornada Prática em AWS (FURG, IFRS, UFFS)
+<p align="center">
+  <img src="docs/assets/banner.svg" alt="Banner do Repos-Compass: bússola estilizada ao lado do título e do texto Entregas do Programa de Bolsas Compass UOL, Práticas de AWS, FURG, IFRS e UFFS. Ilustração, não é captura de tela." width="100%">
+</p>
+
+# Repos-Compass: Jornada Prática em AWS (FURG, IFRS, UFFS)
 
 ## ✨ Sobre o Projeto
 
 **Repos-Compass** reúne as entregas que fiz no Programa de Bolsas da Compass UOL, no curso de **Práticas de AWS (PB-AWS)**, uma parceria entre FURG, IFRS e UFFS. Cada pasta `sprint-X...` guarda o código e o README de uma sprint. A Sprint 1 foi individual; da 2 à 9-10 o trabalho foi em equipe, e a equipe aparece no nome da pasta.
 
 Os READMEs de cada sprint são a fonte das informações abaixo. Para detalhes, rotas e instruções de execução, abra o `README.md` da pasta.
+
+## 🧭 Evolução das sprints
+
+<p align="center">
+  <img src="docs/assets/fluxo-sprints.svg" alt="Fluxo em quatro etapas: 1) sprints 1 e 2, fundamentos com JavaScript, Node.js e API do GitHub; 2) sprints 3 a 5, Docker em EC2, Elastic Beanstalk e modelo no SageMaker; 3) sprint 6, Polly, S3, DynamoDB, Serverless Framework e Amplify; 4) sprints 7 a 10, Lex com Slack, Rekognition com Terraform e chatbot no WhatsApp via Twilio. Ilustração, não é captura de tela." width="560">
+</p>
+
+O agrupamento em etapas é uma leitura editorial a partir dos READMEs de cada sprint. A fonte de cada detalhe é o `README.md` da pasta correspondente.
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -64,6 +76,8 @@ Contribuições são muito bem-vindas! Se você deseja adicionar novas sprints, 
 
 Este projeto está licenciado sob a licença [MIT License](https://opensource.org/licenses/MIT). Sinta-se à vontade para usar, modificar e distribuir o código, desde que a licença seja mantida.
 
+> Observação: o repositório ainda não tem um arquivo `LICENSE` na raiz. *(Pendente: adicionar o arquivo.)*
+
 ## 📧 Contato
 
 Para dúvidas, sugestões ou contato, você pode encontrar Rafael M. Pinheiro em:
@@ -74,14 +88,3 @@ Para dúvidas, sugestões ou contato, você pode encontrar Rafael M. Pinheiro em
 ---
 
 © 2025 Rafael M. Pinheiro. Todos os direitos reservados.
-
-
-
-
-## 📊 Estatísticas e Badges
-
-![GitHub last commit](https://img.shields.io/github/last-commit/RafaelMPinheiro/Repos-Compass)
-![GitHub repo size](https://img.shields.io/github/repo-size/RafaelMPinheiro/Repos-Compass)
-![GitHub language count](https://img.shields.io/github/languages/count/RafaelMPinheiro/Repos-Compass)
-![GitHub top language](https://img.shields.io/github/languages/top/RafaelMPinheiro/Repos-Compass)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
